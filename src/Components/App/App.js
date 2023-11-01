@@ -1,7 +1,18 @@
-import logo from './logo.svg';
+import logo from '../../logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
+import { getNews } from '../../ApiCalls';
 
 function App() {
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    getNews()
+    .then(data => setNews(data.articles))
+  },[])
+
+  console.log(news)
+
   return (
     <div className="App">
       <header className="App-header">
