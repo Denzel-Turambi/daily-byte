@@ -7,7 +7,7 @@ const sampleData = [
     source: { id: 'the-washington-post', name: 'The Washington Post' },
     title: "Millions more smokers should be screened for lung cancer, group says - The Washington Post",
     url: "https://www.washingtonpost.com/health/2023/11/01/lung-cancer-screening-guidance-acs/",
-    urlToImage: "https://www.washingtonpost.com"
+    urlToImage: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/GPS7HNICI4NWNAJOA6BFMPGNKI.JPG&w=1440"
   },
   {
     author: "Laurie McGinley",
@@ -17,7 +17,7 @@ const sampleData = [
     source: { id: 'the-washington-post', name: 'The Washington Post' },
     title: "Millions more smokers should be screened for lung cancer, group says - The Washington Post",
     url: "https://www.washingtonpost.com/health/2023/11/01/lung-cancer-screening-guidance-acs/",
-    urlToImage: "https://www.washingtonpost.com"
+    urlToImage: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/GPS7HNICI4NWNAJOA6BFMPGNKI.JPG&w=1440"
   },
   {
     author: "Laurie McGinley",
@@ -27,7 +27,7 @@ const sampleData = [
     source: { id: 'the-washington-post', name: 'The Washington Post' },
     title: "Millions more smokers should be screened for lung cancer, group says - The Washington Post",
     url: "https://www.washingtonpost.com/health/2023/11/01/lung-cancer-screening-guidance-acs/",
-    urlToImage: "https://www.washingtonpost.com"
+    urlToImage: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/GPS7HNICI4NWNAJOA6BFMPGNKI.JPG&w=1440"
   },
   {
     author: "Laurie McGinley",
@@ -37,7 +37,7 @@ const sampleData = [
     source: { id: 'the-washington-post', name: 'The Washington Post' },
     title: "Millions more smokers should be screened for lung cancer, group says - The Washington Post",
     url: "https://www.washingtonpost.com/health/2023/11/01/lung-cancer-screening-guidance-acs/",
-    urlToImage: "https://www.washingtonpost.com"
+    urlToImage: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/GPS7HNICI4NWNAJOA6BFMPGNKI.JPG&w=1440"
   }
 ]
 

@@ -1,12 +1,15 @@
 import './NewsCard.css'
+import { Link } from 'react-router-dom';
 
-function NewsCard({title, description, img}) {
+function NewsCard({ id, title, description, img }) {
   return (
-    <div className="news-card">
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <img className="dashboard-img" src={img} alt="news article image"/>
-    </div>
+    <Link to={`/${title}`}>
+      <div className="news-card" id={id}>
+        <h2 id={id}>{title}</h2>
+        <p id={id}>{description}</p>
+        <img id={id} className="dashboard-img" src={img} alt="news article image"/>
+      </div>
+    </Link>
   )
 }
 

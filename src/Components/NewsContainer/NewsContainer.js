@@ -3,12 +3,13 @@ import NewsCard from '../NewsCard/NewsCard';
 
 function NewsContainer({news}) {
   const allNews = news.map(newsCard => {
-    console.log('1', news)
     return(
       <NewsCard 
+        id={newsCard.title}
         title={newsCard.title}
         description={newsCard.description}
         img={newsCard.urlToImage}
+        key={newsCard.title}
       />
     )
   })
