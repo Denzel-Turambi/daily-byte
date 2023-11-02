@@ -9,6 +9,9 @@ import FocusView from '../FocusView/FocusView';
 
 function App() {
   const [news, setNews] = useState([]);
+  const [search, setSearch] = useState("");
+  const [filter, setFilter] = useState("");
+  const [searchValue, setSearchValue] = useState("");
 
   useEffect(() => {
     getNews()
@@ -20,15 +23,26 @@ function App() {
   //   setNews(sampleData)
   // },[])
 
+  useEffect(() => {
+    const filteredNews = news.filter(article => article.title.toLowerCase().includes(search))
+    setFilter(filteredNews)
+  }, [news, search])
+
+  function searchFilter(event) {
+    setSearchValue(event.target.value);
+    const searchNews = event.target.value.toLowerCase();
+    setSearch(searchNews);
+  }
+
   console.log(news)
 
   return (
     <div>
       <header>
-        <Nav />
+        <Nav search={search} searchFilter={searchFilter} />
       </header>
       <Routes>
-        <Route path='/' element={<NewsContainer news={news}/>} />
+        <Route path='/' element={<NewsContainer news={news} search={search} filter={filter}/>} />
         <Route path='/:id' element={<FocusView news={news}/>} />
       </Routes>
     </div>
