@@ -1,9 +1,11 @@
+import './NewsCard.css'
+
 function NewsCard({title, description, img}) {
   return (
     <div className="news-card">
       <h2>{title}</h2>
       <p>{description}</p>
-      <img src={img} alt="news article image"/>
+      <img className="dashboard-img" src={img} alt="news article image"/>
     </div>
   )
 }

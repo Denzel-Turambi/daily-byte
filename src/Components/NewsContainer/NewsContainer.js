@@ -14,7 +14,7 @@ function NewsContainer({news}) {
   })
 
   return (
-   <div>
+   <div className="news-container">
     {allNews}
    </div>
   )

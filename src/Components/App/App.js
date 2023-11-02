@@ -8,14 +8,15 @@ import NewsContainer from '../NewsContainer/NewsContainer'
 function App() {
   const [news, setNews] = useState([]);
 
-  useEffect(() => {
-    getNews()
-    .then(data => setNews(data.articles))
-  },[])
-  
   // useEffect(() => {
-  //   setNews(sampleData)
+  //   getNews()
+  //   .then(data => setNews(data.articles))
   // },[])
+  
+  // Sample Data:
+  useEffect(() => {
+    setNews(sampleData)
+  },[])
 
   console.log(news)
 
