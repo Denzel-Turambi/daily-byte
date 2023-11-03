@@ -6,6 +6,16 @@ function FocusView({ news }) {
   const id = useParams();
 
   const singleArticle = news.find(article => id.id === article.title)
+  if (!singleArticle) {
+    return (
+      <div className="focus-container">
+        <h1>Error 404: Article Not Found</h1>
+        <Link to="/" className="button-container">
+          <p className="back-button">Go Back</p>
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <div className="focus-container">
