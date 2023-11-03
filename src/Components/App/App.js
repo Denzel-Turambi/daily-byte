@@ -13,15 +13,15 @@ function App() {
   const [filter, setFilter] = useState("");
   const [searchValue, setSearchValue] = useState("");
 
-  useEffect(() => {
-    getNews()
-    .then(data => setNews(data.articles))
-  },[])
+  // useEffect(() => {
+  //   getNews()
+  //   .then(data => setNews(data.articles))
+  // },[])
   
   // Sample Data:
-  // useEffect(() => {
-  //   setNews(sampleData)
-  // },[])
+  useEffect(() => {
+    setNews(sampleData)
+  },[])
 
   useEffect(() => {
     const filteredNews = news.filter(article => article.title.toLowerCase().includes(search))
@@ -37,7 +37,7 @@ function App() {
   console.log(news)
 
   return (
-    <div>
+    <div className="app">
       <header>
         <Nav search={search} searchFilter={searchFilter} />
       </header>
