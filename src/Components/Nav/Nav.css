@@ -1,0 +1,38 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #06070E;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 18vh;
+  box-shadow: 0px 10px 8px #58595f;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.title-logo {
+  font-size: 300%;
+  color: #70EF6C;
+  margin-left: .5em;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.form {
+  margin-right: 3em;
+}
+
+.search-input {
+  font-size: 160%;
+  width: 20em;
+  padding: .5em;
+  border: none;
+  border-radius: 30px;
+  outline: none !important;
+  font-family: 'Exo 2', sans-serif;
+}
