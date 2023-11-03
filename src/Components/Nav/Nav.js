@@ -5,12 +5,12 @@ function Nav({ search, searchFilter }) {
   const location = useLocation();
 
   return (
-    <nav>
-      <NavLink to='/'>
-        <h1>DailyByte</h1>
+    <nav className="nav-bar">
+      <NavLink to='/' className="nav-link">
+        <h1 className="title-logo">DailyByte</h1>
       </NavLink>
       {location.pathname === '/' && (
-        <form>
+        <form className="form">
           <input
             id="search-input"
             className="search-input"

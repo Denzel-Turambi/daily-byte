@@ -37,7 +37,7 @@ function App() {
   console.log(news)
 
   return (
-    <div>
+    <div className="app">
       <header>
         <Nav search={search} searchFilter={searchFilter} />
       </header>

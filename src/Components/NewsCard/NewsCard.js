@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function NewsCard({ id, title, description, img }) {
   return (
-    <Link to={`/${title}`}>
+    <Link to={`/${title}`} className="nav-link">
       <div className="news-card" id={id}>
         <h2 id={id}>{title}</h2>
         <p id={id}>{description}</p>
